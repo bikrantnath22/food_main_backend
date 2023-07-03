@@ -26,7 +26,7 @@ app.use(cookieParser());
 app.use(
   cors({
     optionsSuccessStatus: 200,
-    origin: true,
+    origin: "https://velvety-dodol-38236b.netlify.app",
     credentials:true
     
   })
