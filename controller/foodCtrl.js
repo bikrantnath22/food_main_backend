@@ -60,7 +60,7 @@ const foodCtrl = {
           // ❌ files are present
           console.log(files);
           const newAvatar = {
-            download_url: `https://food-manegment.onrender.com/${files.avatar.newFilename}`,
+            download_url: `https://food-main-backend.onrender.com/${files.avatar.newFilename}`,
             file_name: files.avatar.newFilename,
           };
           newFood = await Food.create({
@@ -138,7 +138,7 @@ const foodCtrl = {
           return res.status(200).json({ msg: "UPDATE WAS OK!" });
         }
         const newAvatar = {
-          download_url: `https://food-manegment.onrender.com/${files.avatar.newFilename}`,
+          download_url: `https://food-main-backend.onrender.com/${files.avatar.newFilename}`,
           file_name: files.avatar.newFilename,
         };
         await Food.findByIdAndUpdate(id, {

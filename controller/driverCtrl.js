@@ -71,11 +71,11 @@ const driverCtrl = {
           // ❌ files are present
           console.log(files);
           const newAvatar = {
-            download_url: `https://food-manegment.onrender.com/${files.avatar.newFilename}`,
+            download_url: `https://food-main-backend.onrender.com/${files.avatar.newFilename}`,
             file_name: files.avatar.newFilename,
           };
           const newDoc = {
-            download_url: `https://food-manegment.onrender.com/${files.image.newFilename}`,
+            download_url: `https://food-main-backend.onrender.com/${files.image.newFilename}`,
             file_name: files.image.newFilename,
           };
           newDriver = await Users.create({

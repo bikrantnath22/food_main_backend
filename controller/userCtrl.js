@@ -181,7 +181,7 @@ const userCtrl = {
           return res.status(200).json({ msg: "UPDATE WAS OK!" });
         }
         const newAvatar = {
-          download_url: `https://food-manegment.onrender.com/${files.avatar.newFilename}`,
+          download_url: `https://food-main-backend.onrender.com//${files.avatar.newFilename}`,
           file_name: files.avatar.newFilename,
         };
         await Users.findByIdAndUpdate(userDetail.user_id, {

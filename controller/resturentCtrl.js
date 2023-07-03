@@ -85,7 +85,7 @@ const resturentCtrl ={
               // ❌ files are present
               console.log(files);
               const newAvatar = {
-                download_url: `https://food-manegment.onrender.com/${files.avatar.newFilename}`,
+                download_url: `https://food-main-backend.onrender.com/${files.avatar.newFilename}`,
                 file_name: files.avatar.newFilename,
               };
               newResturent = await Users.create({
